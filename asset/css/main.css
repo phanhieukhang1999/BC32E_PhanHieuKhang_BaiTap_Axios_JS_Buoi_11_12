@@ -1,0 +1,30 @@
+.container .product__info {
+  /* padding: 20px 20px; */
+    border: 1px solid #ccc;
+}
+.container .product__info .title {
+  background-color: #343a40;
+  border: 1px solid #ccc;
+  padding: 20px 20px;
+}
+
+.container .product__info .title a {
+  color: #f9bc0b;
+  text-decoration: none;
+}
+
+.container .product__info .content {
+    padding: 5px 20px;
+}
+
+.container .product__info .button {
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .table__title {
+    background-color: #6d757d;
+    color: #f7bb10;
+}
