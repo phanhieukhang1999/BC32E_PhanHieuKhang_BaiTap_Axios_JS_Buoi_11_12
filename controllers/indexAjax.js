@@ -42,7 +42,7 @@ document.querySelector('#btnCreate').onclick = function () {
     })
     promise.then(function (result) {
         console.log(result.data);
-        //Gọi lại api lấy danh sách sinh viên sau khi thêm thành công
+        //Gọi lại api lấy danh sách sản phẩm sau khi thêm thành công
         layDanhSachProduct();
     });
 
@@ -57,13 +57,13 @@ document.querySelector('#btnCreate').onclick = function () {
 function renderProduct(arrProduct) { //param : input :arrProduct
     var html = ''; //output: string html 
     for (var i = 0; i < arrProduct.length; i++) {
-        var sp = arrProduct[i]; //Mỗi lần duyệt lấy ra 1 object sinhVien từ mảng {maSinhVien:'1',tenSinhVien:'...',...}
+        var sp = arrProduct[i]; 
         html += `
             <tr>
                 <td>${sp.id}</td>
-                <td><img src="${sp.img}" alt="" style="width: 100px;"></td>
+                <td><img src="${sp.img}" alt="product image" style="width: 100px;"></td>
                 <td>${sp.name}</td>
-                <td>${sp.price}</td>
+                <td>${sp.price} đ</td>
                 <td>${sp.description}</td>
                 <td>${sp.type}</td>
                 <td class="row">
